@@ -4,6 +4,10 @@ from urllib.request import urlopen
 from bs4 import BeautifulSoup
 import pandas as pd
 
+## convert to function
+## inputs are symbol and date
+# output will be a list of 2 dataframes.. for put & call respectively
+
 optionsURL = 'https://finance.yahoo.com/quote/TSLA/options?p=TSLA'
 optionsPage = urlopen(optionsURL)
 htmldata = BeautifulSoup(optionsPage)
